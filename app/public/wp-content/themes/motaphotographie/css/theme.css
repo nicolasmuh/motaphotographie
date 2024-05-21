@@ -1,0 +1,234 @@
+/*** réglage général retenu pour le designe***/
+root {
+    --rouge-principal: #E00000;
+    --rouge-secondairee: #FE5858;
+    --rouge-tertiaire: #FFD6D6;
+    --texte-noir: #000000;
+    --bleu-soutenu: #313144;
+    --gris-foncé: #C4C4C4;
+    --gris-medium: #D8D8D8;
+    --gris-light: #E5E5E5;
+}
+h1{
+    font-family: Space Mono;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 700;
+}
+h2{
+    font-family: Space Mono;
+    font-size: 66px;
+    font-style: italic;
+    font-weight: 400;
+    
+}
+h3{
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.descript{
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.73px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+/*********** Header ***********/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 4px 0 #00000008;
+}
+
+nav {
+    margin-right: 100px;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+/*********** Menu ***********/
+
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu a:hover {
+    font-weight: 700;
+}
+
+/*********** Footer ***********/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px black solid;
+    width: 100%;
+}
+/**nodale contact */
+/** #nodale tte la nodale
+    class Nod-button // pour le bouton nodale*/
+.modale {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 1%;
+    max-width:60% ;
+    height: 100%;
+    z-index: 99;
+    }
+#modale{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px;
+}
+.mod-button{
+    display: flex;
+
+}
+.modHeader{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    max-width: 500px;
+    box-sizing: content-box;
+    overflow-x: hidden;
+    align-items: center;
+}
+.F-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.F-button input{
+    width: 300px;
+}
+/** singlephoto*/
+.p1viewEtTxte{
+    display: flex;
+}
+.zoneDétails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.detailPhoto{
+    margin-left: 10%;
+    border-bottom: 1px solid;
+}
+.cadrePhoto{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.photoImage{
+    box-sizing: content-box;
+    max-width: 100%;
+    max-height: 95%;
+}
+.p2interaction-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin-left: 5%;
+    border-bottom: 1px solid;
+}
+.interaction-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.interaction-contact p{
+    margin-left: 10%;
+}
+.interaction-contact button{
+    width: 35%;
+}
+.zone-fleche-preview{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: end;
+    width: 50%;
+}
+.zone-fleche{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div-vignettes{
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    max-width: 20%;
+}
+
+.conteneur-vignette-precedent, .conteneur-vignette-suivant{
+    display: flex;
+    box-sizing: content-box;
+    max-width: 40%;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.conteneur-vignette-precedent img, .conteneur-vignette-suivant img{
+    max-width: 100%;
+}
+.p3PostsEnRapport{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin-left: 8%;
+}
+.p3presente{
+    display: flex;
+    flex-direction: column;
+
+}
+.p3autrepost{
+    display: flex;
+    flex-direction: row;
+}
