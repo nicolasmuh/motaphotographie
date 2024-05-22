@@ -8,6 +8,8 @@
 ?>
 <?php
 echo "hello word";
+?>
+<?php
     // Récupération des informations de la photo
     $titre_post = get_the_title();
     $titre_nettoye = sanitize_title($titre_post);
@@ -27,7 +29,7 @@ echo "hello word";
         }
 
     // Récupération de la catégorie de la photo et stockage pour filtrage
-    $categories = get_the_terms(get_the_ID(), 'categories');
+    $categories = get_the_terms(get_the_ID(), 'categorie_photos');
         if ($categories && !is_wp_error($categories)) {
             $noms_categories = array();
             foreach ($categories as $categorie) {

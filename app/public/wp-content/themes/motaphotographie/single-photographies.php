@@ -19,18 +19,18 @@ if ($custom_query->have_posts()) :
 
         $reference = get_field('reference');
         $type = get_field('Type');
-        $categories = wp_get_post_terms(get_the_ID(), 'categories');
+        $annee = get_field('annee');
+        $categories = wp_get_post_terms(get_the_ID(), 'categorie_photos');
         $formats = wp_get_post_terms(get_the_ID(), 'formats');
     
     // Debugging - Vérification des valeurs récupérées
-    echo '<pre>';
-    var_dump($type);
-    echo '---';
-    
-    echo 'Categories: ';
-    var_dump($categories);
-    
-    echo '</pre>';
+    //echo '<pre>';
+    //var_dump($type);
+    //echo 'refence : ';
+    //var_dump($reference);
+    //echo 'Categories: ';
+    //var_dump($categories);
+    //echo '</pre>';
 ?>
 <div class="p1viewEtTxte">
     <!-- Zone gauche - Informations photos -->
@@ -50,7 +50,7 @@ if ($custom_query->have_posts()) :
                 ?>
             </p>
             <p>TYPE : <?php echo esc_html($type); ?></p>
-            <p>ANNÉE : <?php echo get_the_date('Y'); ?></p>
+            <p>ANNÉE : <?php echo esc_html($annee); ?></p>
         </div>
     </div>
     <!-- Zone droite - La photo -->
@@ -171,7 +171,7 @@ endif;
         <div class="p3autrepost">
             <?php
                 // Récupération de la catégorie de la photo actuelle
-                $categories = wp_get_post_terms(get_the_ID(), 'categories');
+                $categories = wp_get_post_terms(get_the_ID(), 'categorie_photos');
 
                 if ($categories && !is_wp_error($categories)) {
                     $ID_categories = wp_list_pluck($categories, 'term_id');
@@ -184,7 +184,7 @@ endif;
                         'orderby' => 'rand',
                         'tax_query' => array(
                             array(
-                                'taxonomy' => 'categories',
+                                'taxonomy' => 'categorie_photos',
                                 'field' => 'id',
                                 'terms' => $ID_categories,
                             ),
