@@ -18,13 +18,13 @@ if ($custom_query->have_posts()) :
     while ($custom_query->have_posts()) : $custom_query->the_post();
 
         $reference = get_field('reference');
-        $type = get_field('type');
+        $type = get_field('Type');
         $categories = wp_get_post_terms(get_the_ID(), 'categories');
         $formats = wp_get_post_terms(get_the_ID(), 'formats');
     
     // Debugging - Vérification des valeurs récupérées
     echo '<pre>';
-    
+    var_dump($type);
     echo '---';
     
     echo 'Categories: ';
@@ -171,7 +171,7 @@ endif;
         <div class="p3autrepost">
             <?php
                 // Récupération de la catégorie de la photo actuelle
-                $categories = wp_get_post_terms(get_the_ID(), 'catégorie');
+                $categories = wp_get_post_terms(get_the_ID(), 'categories');
 
                 if ($categories && !is_wp_error($categories)) {
                     $ID_categories = wp_list_pluck($categories, 'term_id');
@@ -184,7 +184,7 @@ endif;
                         'orderby' => 'rand',
                         'tax_query' => array(
                             array(
-                                'taxonomy' => 'catégorie',
+                                'taxonomy' => 'categories',
                                 'field' => 'id',
                                 'terms' => $ID_categories,
                             ),
@@ -195,7 +195,7 @@ endif;
                         while ($photos_similaires->have_posts()) {
                             $photos_similaires->the_post();
                             // Affichage de la photo similaire gérée via un template part
-                            get_template_part('/template_parts/photo-bloc');
+                            get_template_part('/template-parts/photo-bloc');
                         }
                         wp_reset_postdata();
                     } else {
