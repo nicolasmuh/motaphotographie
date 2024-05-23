@@ -28,7 +28,7 @@
 			<div class="modale">
             <!--<php include(get_stylesheet_directory() . '/template-parts/modale'); ?>-->
             <?php get_template_part('/template-parts/modale'); ?>
-            </div>			<!-- D'autres éléments seront a ajoutés ensuite -->
+            </div>
         </header>
 
         <main>

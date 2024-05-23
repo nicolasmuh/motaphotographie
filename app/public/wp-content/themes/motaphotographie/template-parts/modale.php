@@ -2,10 +2,11 @@
 /**
  * Template part for displaying the contact section
  * 
- * 
- * @package motaphoto theme
+ * @package WordPress
+ * @subpackage MotaPhotographie theme
  */
 ?>
+
 <div id="modale">
     <button class="mod-button">X</button>
     <div class="modHeader">

@@ -4,3 +4,5 @@
 [22-May-2024 15:38:18 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-content\plugins\custom-post-type-ui\inc\taxonomies.php on line 230
 [22-May-2024 16:09:41 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-content\themes\motaphotographie\single-photographies.php on line 44
 [22-May-2024 16:09:41 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-content\themes\motaphotographie\single-photographies.php on line 44
+[23-May-2024 12:37:38 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[23-May-2024 16:36:39 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-includes\class-wp-customize-widgets.php on line 905

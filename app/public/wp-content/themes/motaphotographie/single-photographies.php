@@ -37,7 +37,7 @@ if ($custom_query->have_posts()) :
     <div class="zoneDétails">
         <div class="detailPhoto">
             <h2><?php the_title();?></h2>
-            <p>RÉFÉRENCE : <span id="..."><?php echo esc_html($reference); ?></span></p>
+            <p>RÉFÉRENCE : <span id="ref-foto"><?php echo esc_html($reference); ?></span></p>
             <p>CATÉGORIE :
                 <?php foreach ($categories as $categorie) {
                     echo esc_html($categorie->name);
@@ -162,8 +162,6 @@ if ($custom_query->have_posts()) :
 endif;
 ?>
 
-
-
 <!-- Dernière partie de page - Photos apparentées -->
 <div class="p3PostsEnRapport">
     <h3>Vous aimerez aussi</h3>
@@ -205,7 +203,7 @@ endif;
                 }
             ?>
         </div>
-        <a href="<?php echo esc_url(home_url('/')); ?>"><button class="...">Toutes les photos</button></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>"><button class="butOtrFoto">Toutes les photos</button></a>
     </div>
 </div>
 

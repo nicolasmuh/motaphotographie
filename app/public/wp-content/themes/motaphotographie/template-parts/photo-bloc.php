@@ -3,11 +3,8 @@
  * Template part for displaying the photo section
  *
  * @package WordPress
- * @subpackage motaphoto theme
+ * @subpackage MotaPhotographie theme
  */
-?>
-<?php
-echo "hello word";
 ?>
 <?php
     // Récupération des informations de la photo
@@ -54,10 +51,10 @@ echo "hello word";
                 <i class="fa-regular fa-eye oeil" style="color: #ffffff;"></i>
             </div>
             <div class="bas-survol">
-                <div class="...">
+                <div class="ref_photo">
                     <?php echo $reference_photo ?>
                 </div>
-                <div class="...">
+                <div class="list_cate">
                     <?php echo $liste_categories; ?>
                 </div>
             </div>

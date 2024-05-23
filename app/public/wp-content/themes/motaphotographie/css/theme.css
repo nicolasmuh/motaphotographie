@@ -109,7 +109,7 @@ footer {
     display: none;
     position: fixed;
     left: 30%;
-    top: 1%;
+    top: 14%;
     max-width:60% ;
     height: 100%;
     z-index: 99;
@@ -221,14 +221,32 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    
+}
+.p3PostsEnRapport h3{
     margin-left: 8%;
 }
 .p3presente{
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    align-items: center;
 }
 .p3autrepost{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+.autres-photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 40%;
+    flex-wrap: wrap;
+}
+.butOtrFoto{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15%;
 }
