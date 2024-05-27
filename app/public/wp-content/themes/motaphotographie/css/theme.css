@@ -476,3 +476,51 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+/** home**/
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+.hero{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    max-width: 1400px;
+}
+.hero h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    margin: 0;
+    z-index: 2;
+}
+.cadre_affiche_foto_alea{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.bloc-les-photos{
+    display: flex;
+    flex-direction: column;
+}
+.filtres{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.affichage-des-photos{
+    display: flex;
+    flex-direction: column;
+}
