@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const choixPossibles = options.querySelectorAll(".menu-option");
 
         // Ajout d'une class pour le dernier élément afin de gérer le border radius
-        choixPossibles[choixPossibles.length - 1].classList.add("dernier");
+        choixPossibles[choixPossibles.length - 1].classList.add(".dernier");
 
         choixPossibles.forEach(function(option, index) {
             option.addEventListener("click", function() {

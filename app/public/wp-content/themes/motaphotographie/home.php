@@ -48,7 +48,7 @@ get_header();
 
                     echo '<div class="vide" id="categorie-vide"></div>';
 
-                    $possibilites = get_terms('categorie');
+                    $possibilites = get_terms('categorie_photos');
 
                     if (!empty($possibilites) && !is_wp_error($possibilites)) {
                         foreach ($possibilites as $possibilite) {
@@ -111,7 +111,7 @@ get_header();
                 if ($photo_query->have_posts()) {
                     while ($photo_query->have_posts()) {
                         $photo_query->the_post();
-                        get_template_part('template_part/photo-bloc');
+                        get_template_part('template-parts/photo-bloc');
                     }
                     wp_reset_postdata();
                 } else {
