@@ -11,7 +11,8 @@ function theme_enqueue_styles(){
 function theme_enqueue_script() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js');
-        // appel d'ajax
+    wp_enqueue_script('script-lightbox', get_template_directory_uri() . '/assets/js/lightbox.js');
+        //appel de la pagination conditionner a la page home et appel d'ajax c
      if(is_home()){ 
         wp_enqueue_script('script-pagination', get_template_directory_uri() . '/assets/js/charger-plus.js');//appel du script charger-plus
         wp_localize_script('script-pagination', 'myAjax', array('ajaxurl' => admin_url('admin-ajax.php'), 'nonce'   => wp_create_nonce('ajax-nonce'),));
