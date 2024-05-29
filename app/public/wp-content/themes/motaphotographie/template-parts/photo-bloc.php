@@ -43,7 +43,7 @@
     </div>
     <?php echo $photo_post; ?>
     <div class="survol-photo">
-        <div class="...">
+        <div class="options-survol">
             <div class="haut-survol">
                 <i class="fa-solid fa-expand full-screen" style="color: #ffffff;"></i>
             </div>

@@ -238,15 +238,33 @@ footer {
 .p3autrepost{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .autres-photos{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     max-width: 40%;
-    flex-wrap: wrap;
+    width: 560px;
+    height: 600px;
+}
+.autres-photos figure{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+}
+.autres-photos figure img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: none; /* Empêche ajustement au conteneur */
+    max-height: none;
 }
 .butOtrFoto{
     width: 100%;
@@ -437,8 +455,8 @@ footer {
 .zone-les-photos .haut-survol, .zone-photos .haut-survol {
     transform: scale(1.6);
     position: absolute;
-    top: 15px;
-    left: 520px;
+    top: 2%;
+    left: 98%;
 }
 
 .zone-les-photos .haut-survol i, .zone-photos .haut-survol i {
@@ -452,6 +470,7 @@ footer {
 .zone-les-photos .milieu-survol, .zone-photos .milieu-survol {
     transform: scale(2.4);
     position: absolute;
+    top: 2%;
 }
 
 .zone-les-photos .milieu-survol i, .zone-photos .milieu-survol i {
@@ -541,16 +560,18 @@ main{
     justify-content: flex-start;
     width: 100%;
     margin: 5% 0 3% 0;
-    gap: 5%;
+    gap: 14%;
 }
-
+.bloc-filtre{
+    width: 6%;
+}
 #filtre-tri {
     padding-left: 22%;
 }
 
 .menu-deroulant {
-    width: 260px;
-    height: 45px;
+    width: 200%;
+    height: 100%;
     border: 1px solid #B8BBC2;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
@@ -561,6 +582,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 15%;
 }
 
 .menu-titre {
@@ -593,7 +615,7 @@ main{
     display: none;
     position: absolute;
     flex-direction: column;
-    width: 260px;
+    width: 11%;
     border: 1px solid #ccc;
     border-top: none;
     border-radius: 0 0 8px 8px;
@@ -606,6 +628,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     z-index: 75;
+    margin-left: 1%;
 }
 
 .menu-option {
