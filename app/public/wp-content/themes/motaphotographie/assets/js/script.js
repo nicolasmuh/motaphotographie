@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Si on se trouve sur la page single-photographies.php seulement
 		let urlActuelle = window.location.href;
 		if (urlActuelle.match(/photographies/)) {
-		const flechePrecedente = document.querySelector('.fleche-gauche');
-		const flecheSuivante = document.querySelector('.fleche-droite');
+		const flechePrecedente = document.querySelector('.navPreview');
+		const flecheSuivante = document.querySelector('.navPostview');
 		const zoneVignetteGauche = document.querySelector('.conteneur-vignette-precedent');
 		const zoneVignetteDroite = document.querySelector('.conteneur-vignette-suivant');
 		zoneVignetteGauche.style.display = "none";
@@ -120,3 +120,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 		lightbox();
 	}
+	//gestion menu ecran <700px
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuBurger = document.querySelector(".burger-open");
+		const nav = document.querySelector("nav");
+	
+		function changeImageSrc(element, imageName) {
+			let currentSrc = element.getAttribute("src");
+			let srcArray = currentSrc.split("/");
+			srcArray[srcArray.length - 1] = imageName;
+			let newSrc = srcArray.join("/");
+			element.setAttribute("src", newSrc);
+		}
+	
+		menuBurger.addEventListener("click", function () {
+				if (nav.style.display === "flex") {
+					nav.style.display = "none";
+					changeImageSrc(menuBurger, "burger-open.png");
+	
+				} else {
+					nav.style.display = "flex";
+					changeImageSrc(menuBurger, "burger-close.png");
+				}
+			});
+	});

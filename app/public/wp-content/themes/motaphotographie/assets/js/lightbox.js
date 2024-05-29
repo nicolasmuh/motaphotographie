@@ -18,8 +18,8 @@ function lightbox() {
 	        const laPhoto = element.querySelector('img');
 	        const hauteurLaPhoto = laPhoto.naturalHeight;
 	        const largeurLaPhoto = laPhoto.naturalWidth;
-	        const reference = element.querySelector('.survol-reference');
-	        const categorie = element.querySelector('.survol-categorie');
+	        const reference = element.querySelector('.ref_photo');//ref_photo pour survol-reference
+	        const categorie = element.querySelector('.list_cate');//list_cate pour survol-categorie
 	        return {
 	            src: laPhoto.src,
 	            width: largeurLaPhoto,
