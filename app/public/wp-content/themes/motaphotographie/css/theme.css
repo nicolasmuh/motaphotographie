@@ -455,7 +455,7 @@ footer {
 .zone-les-photos .haut-survol, .zone-photos .haut-survol {
     transform: scale(1.6);
     position: absolute;
-    top: 2%;
+    top: 5%;
     left: 98%;
 }
 
@@ -470,7 +470,8 @@ footer {
 .zone-les-photos .milieu-survol, .zone-photos .milieu-survol {
     transform: scale(2.4);
     position: absolute;
-    top: 2%;
+    top: 50%;
+    left: 50%;
 }
 
 .zone-les-photos .milieu-survol i, .zone-photos .milieu-survol i {
@@ -480,10 +481,11 @@ footer {
 
 .zone-les-photos .bas-survol, .zone-photos .bas-survol {
     display: flex;
-    gap: 220px;
+    gap: 195%;
     transform: scale(1.5);
     position: absolute;
-    top: 450px;
+    bottom: 1%;
+    left: 10%;
     opacity: 0.8;
 }
 
