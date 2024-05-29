@@ -42,6 +42,11 @@ p{
     font-weight: 300;
     line-height: 21px;
 }
+body{
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: content-box;
+}
 
 /*********** Header ***********/
 
@@ -50,6 +55,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 1440px;
     height: 80px;
     box-shadow: 0 4px 4px 0 #00000008;
 }
@@ -456,7 +462,7 @@ footer {
     transform: scale(1.6);
     position: absolute;
     top: 5%;
-    left: 98%;
+    left: 90%;
 }
 
 .zone-les-photos .haut-survol i, .zone-photos .haut-survol i {
@@ -488,7 +494,10 @@ footer {
     left: 10%;
     opacity: 0.8;
 }
-
+.zone-les-photos .bas-survol .ref_photo, .zone-les-photos .bas-survol .list_cate,
+.zone-photos .bas-survol .ref_photo, .zone-photos .bas-survol .list_cate{
+    color: var(--gris-light) ;
+}
 .survol-reference {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -506,7 +515,7 @@ main{
     flex-direction: column;
     width: 100%;
     max-width: 1400px;
-    margin: auto;
+    margin: 0;
 }
 .hero{
     position: relative;
@@ -519,7 +528,9 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; 
+    color: transparent;
+    -webkit-text-stroke-width: 2px; /* Largeur du contour */
+    -webkit-text-stroke-color: white; /* Couleur du contour */ 
     margin: 0;
     z-index: 2;
 }
@@ -535,7 +546,12 @@ main{
 }
 .cadre_affiche_foto_alea figure{
     margin: 0;
+    width: 100%;
     
+}
+.cadre_affiche_foto_alea figure img{
+    width: 100%;
+    max-width: 1440Px;
 }
 .bloc-les-photos{
     display: flex;
@@ -726,6 +742,12 @@ main{
     .emplacement-modale{
         z-index: 9999;
         top: 36px;
+    }
+    .p1viewEtTxte{
+        flex-direction: column-reverse;
+    }
+    .zoneDétails, .cadrePhoto{
+        width: 100%;
     }
     .filtres {
         width: 100%;
