@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-
     // Gestion de l'ouverture et de la fermeture des menus déroulants
-
     function menuDeroulant(menuId, optionsId) {
+        //definition des constante
         const menu = document.getElementById(menuId);
         const options = document.getElementById(optionsId);
         const fleche = menu.querySelector(".menu-fleche");
@@ -133,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fonction de mise à jour des photos
     function miseAJourPhotos(category, format, order) {
+        console.log("Starting AJAX request");
         // Envoyer une requête AJAX pour récupérer les photos filtrées
         jQuery.ajax({
             url: myAjax.ajaxurl,
@@ -146,13 +146,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 nonce: myAjax.nonce
             },
             success: function(response) {
+                console.log("AJAX request successful");
+                console.log("Response:", response);
                 zoneLesPhotos.innerHTML = response;
+                console.log("zoneLesPhotos element:", zoneLesPhotos);
                 // Si le nouveau contenu dispose de moins de 8 photos, alors le bouton charger plus disparaît
                 surveillerChargerPlus();
                 // L'overlay de chaque photo se charge à chaque requête
                 overlay();
             },
             error: function(error) {
+                console.error("AJAX request failed");
                 console.log(error);
             }
         });

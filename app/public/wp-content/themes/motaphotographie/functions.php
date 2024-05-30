@@ -81,12 +81,11 @@ function filtrer_photos() {
     if (isset($_POST['category']) && $_POST['category'] !== 'all') {
         $category = $_POST['category'];
         $tax_query[] = array(
-            'taxonomy' => 'categorie',
+            'taxonomy' => 'categorie_photos',//categorie_photos a la place categorie
             'field' => 'slug',
             'terms' => $category,
         );
     }
-
     // Si un format est présent et n'est pas égal à all
     if (isset($_POST['format']) && $_POST['format'] !== 'all') {
         $format = $_POST['format'];

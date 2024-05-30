@@ -47,9 +47,9 @@ get_header();
                     <?php
 
                     echo '<div class="vide" id="categorie-vide"></div>';
-
+                    /**appel des differentes categorie cree dans le theme */
                     $possibilites = get_terms('categorie_photos');
-
+                    /** boucle sur chaque categorie pour affichage de chaque */
                     if (!empty($possibilites) && !is_wp_error($possibilites)) {
                         foreach ($possibilites as $possibilite) {
                             echo '<div class="menu-option" id="' . esc_attr($possibilite->slug) . '">' . esc_html($possibilite->name) . '</div>';
