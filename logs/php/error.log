@@ -6,3 +6,631 @@
 [22-May-2024 16:09:41 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-content\themes\motaphotographie\single-photographies.php on line 44
 [23-May-2024 12:37:38 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [23-May-2024 16:36:39 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\Nicolas\Local Sites\motaphotographie\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[30-May-2024 12:33:37 UTC] Category: mariage
+[30-May-2024 12:39:34 UTC] Category: concert
+[30-May-2024 13:00:22 UTC] Category: reception
+[30-May-2024 13:00:26 UTC] Category: reception
+[30-May-2024 13:00:26 UTC] formats: paysage
+[30-May-2024 13:20:19 UTC] Nonce check passed
+[30-May-2024 13:20:19 UTC] Category: concert
+[30-May-2024 13:20:19 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => concert
+        )
+
+)
+
+[30-May-2024 13:20:19 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => concert
+                )
+
+        )
+
+)
+
+[30-May-2024 13:20:19 UTC] Query executed
+[30-May-2024 13:20:25 UTC] Nonce check passed
+[30-May-2024 13:20:25 UTC] Category: concert
+[30-May-2024 13:20:25 UTC] formats: paysage
+[30-May-2024 13:20:25 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => concert
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => paysage
+        )
+
+)
+
+[30-May-2024 13:20:25 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => concert
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => paysage
+                )
+
+        )
+
+)
+
+[30-May-2024 13:20:25 UTC] Query executed
+[30-May-2024 13:33:41 UTC] Nonce check passed
+[30-May-2024 13:33:41 UTC] Category: concert
+[30-May-2024 13:33:41 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => concert
+        )
+
+)
+
+[30-May-2024 13:33:41 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => concert
+                )
+
+        )
+
+)
+
+[30-May-2024 13:33:41 UTC] Query executed
+[30-May-2024 13:33:41 UTC] Post found: Let&rsquo;s party
+[30-May-2024 13:33:41 UTC] Post found: Au bal masqué
+[30-May-2024 13:33:41 UTC] Post found: Préparation
+[30-May-2024 13:33:41 UTC] Post found: Bière ou eau plate ?
+[30-May-2024 13:42:02 UTC] Nonce check passed
+[30-May-2024 13:42:02 UTC] Category: concert
+[30-May-2024 13:42:02 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => concert
+        )
+
+)
+
+[30-May-2024 13:42:02 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => concert
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:02 UTC] Query executed
+[30-May-2024 13:42:02 UTC] Post found: Let&rsquo;s party
+[30-May-2024 13:42:02 UTC] Post found: Au bal masqué
+[30-May-2024 13:42:02 UTC] Post found: Préparation
+[30-May-2024 13:42:02 UTC] Post found: Bière ou eau plate ?
+[30-May-2024 13:42:10 UTC] Nonce check passed
+[30-May-2024 13:42:10 UTC] Category: mariage
+[30-May-2024 13:42:10 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+)
+
+[30-May-2024 13:42:10 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:10 UTC] Query executed
+[30-May-2024 13:42:10 UTC] Post found: Tout est installé
+[30-May-2024 13:42:10 UTC] Post found: Le menu
+[30-May-2024 13:42:10 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:10 UTC] Post found: Dansons ensemble
+[30-May-2024 13:42:10 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:10 UTC] Post found: Let&rsquo;s dance!
+[30-May-2024 13:42:10 UTC] Post found: Bouquet final
+[30-May-2024 13:42:10 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:31 UTC] Nonce check passed
+[30-May-2024 13:42:31 UTC] Category: mariage
+[30-May-2024 13:42:31 UTC] formats: paysage
+[30-May-2024 13:42:31 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => paysage
+        )
+
+)
+
+[30-May-2024 13:42:31 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => paysage
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:31 UTC] Query executed
+[30-May-2024 13:42:31 UTC] Post found: Le menu
+[30-May-2024 13:42:31 UTC] Post found: Dansons ensemble
+[30-May-2024 13:42:31 UTC] Post found: Let&rsquo;s dance!
+[30-May-2024 13:42:36 UTC] Nonce check passed
+[30-May-2024 13:42:36 UTC] Category: mariage
+[30-May-2024 13:42:36 UTC] formats: portrait
+[30-May-2024 13:42:36 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => portrait
+        )
+
+)
+
+[30-May-2024 13:42:36 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => portrait
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:36 UTC] Query executed
+[30-May-2024 13:42:36 UTC] Post found: Tout est installé
+[30-May-2024 13:42:36 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:36 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:36 UTC] Post found: Bouquet final
+[30-May-2024 13:42:36 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:36 UTC] Post found: Team mariée
+[30-May-2024 13:42:41 UTC] Nonce check passed
+[30-May-2024 13:42:41 UTC] Category: mariage
+[30-May-2024 13:42:41 UTC] formats: portrait
+[30-May-2024 13:42:41 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => portrait
+        )
+
+)
+
+[30-May-2024 13:42:41 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => portrait
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:41 UTC] Query executed
+[30-May-2024 13:42:41 UTC] Post found: Tout est installé
+[30-May-2024 13:42:41 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:41 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:41 UTC] Post found: Bouquet final
+[30-May-2024 13:42:41 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:41 UTC] Post found: Team mariée
+[30-May-2024 13:42:44 UTC] Nonce check passed
+[30-May-2024 13:42:44 UTC] Category: mariage
+[30-May-2024 13:42:44 UTC] formats: portrait
+[30-May-2024 13:42:44 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => portrait
+        )
+
+)
+
+[30-May-2024 13:42:44 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => DESC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => portrait
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:44 UTC] Query executed
+[30-May-2024 13:42:44 UTC] Post found: Team mariée
+[30-May-2024 13:42:44 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:44 UTC] Post found: Bouquet final
+[30-May-2024 13:42:44 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:44 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:44 UTC] Post found: Tout est installé
+[30-May-2024 13:42:46 UTC] Nonce check passed
+[30-May-2024 13:42:46 UTC] Category: mariage
+[30-May-2024 13:42:46 UTC] formats: portrait
+[30-May-2024 13:42:46 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => portrait
+        )
+
+)
+
+[30-May-2024 13:42:46 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => portrait
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:46 UTC] Query executed
+[30-May-2024 13:42:46 UTC] Post found: Tout est installé
+[30-May-2024 13:42:46 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:46 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:46 UTC] Post found: Bouquet final
+[30-May-2024 13:42:46 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:46 UTC] Post found: Team mariée
+[30-May-2024 13:42:51 UTC] Nonce check passed
+[30-May-2024 13:42:51 UTC] Category: mariage
+[30-May-2024 13:42:51 UTC] formats: portrait
+[30-May-2024 13:42:51 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+    [1] => Array
+        (
+            [taxonomy] => formats
+            [field] => slug
+            [terms] => portrait
+        )
+
+)
+
+[30-May-2024 13:42:51 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => formats
+                    [field] => slug
+                    [terms] => portrait
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:51 UTC] Query executed
+[30-May-2024 13:42:51 UTC] Post found: Tout est installé
+[30-May-2024 13:42:51 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:51 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:51 UTC] Post found: Bouquet final
+[30-May-2024 13:42:51 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:51 UTC] Post found: Team mariée
+[30-May-2024 13:42:52 UTC] Nonce check passed
+[30-May-2024 13:42:52 UTC] Category: mariage
+[30-May-2024 13:42:52 UTC] Array
+(
+    [relation] => AND
+    [0] => Array
+        (
+            [taxonomy] => categorie_photos
+            [field] => slug
+            [terms] => mariage
+        )
+
+)
+
+[30-May-2024 13:42:52 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+            [0] => Array
+                (
+                    [taxonomy] => categorie_photos
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+        )
+
+)
+
+[30-May-2024 13:42:52 UTC] Query executed
+[30-May-2024 13:42:52 UTC] Post found: Tout est installé
+[30-May-2024 13:42:52 UTC] Post found: Le menu
+[30-May-2024 13:42:52 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:52 UTC] Post found: Dansons ensemble
+[30-May-2024 13:42:52 UTC] Post found: Embrassez la mariée
+[30-May-2024 13:42:52 UTC] Post found: Let&rsquo;s dance!
+[30-May-2024 13:42:52 UTC] Post found: Bouquet final
+[30-May-2024 13:42:52 UTC] Post found: Du soir au matin
+[30-May-2024 13:42:54 UTC] Nonce check passed
+[30-May-2024 13:42:54 UTC] Array
+(
+    [relation] => AND
+)
+
+[30-May-2024 13:42:54 UTC] Array
+(
+    [post_type] => photographies
+    [posts_per_page] => 8
+    [orderby] => date
+    [order] => ASC
+    [paged] => 1
+    [tax_query] => Array
+        (
+            [relation] => AND
+        )
+
+)
+
+[30-May-2024 13:42:54 UTC] Query executed
+[30-May-2024 13:42:54 UTC] Post found: Santé !
+[30-May-2024 13:42:54 UTC] Post found: Tout est installé
+[30-May-2024 13:42:54 UTC] Post found: Le menu
+[30-May-2024 13:42:54 UTC] Post found: Et bon anniversaire !
+[30-May-2024 13:42:54 UTC] Post found: Vers l&rsquo;éternité
+[30-May-2024 13:42:54 UTC] Post found: Dansons ensemble
+[30-May-2024 13:42:54 UTC] Post found: Let&rsquo;s party
+[30-May-2024 13:42:54 UTC] Post found: Embrassez la mariée
