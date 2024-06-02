@@ -1,9 +1,10 @@
 <?php
 /**
- * The Home : ACCUEIL
+ * The Home Template
+ * 
  *
  * @package WordPress
- * @subpackage motaphoto theme
+ * @subpackage motaphotographie theme
  */
 ?>
 <!-- On affiche le header -->

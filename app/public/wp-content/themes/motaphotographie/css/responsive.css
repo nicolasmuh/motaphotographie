@@ -1,0 +1,123 @@
+/**responsive **/
+@media (max-width: 800px) {
+    h1{
+        font-size: 28;
+    }
+    h2{
+        font-size: 46px;
+    }
+   
+
+    /* Header */
+    .logo-site img {
+        max-width: 200px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        display: none;
+        width: 100%;
+        z-index: 999;
+        background-color: red;
+        margin: 0;
+        justify-content: center;
+        padding: 150px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    nav ul.menu li a{
+        color: white;
+        font-size: 44px;
+    }
+
+    .burger-open{
+        display: block;
+    }
+
+    .logo-site {
+        margin: 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .emplacement-modale{
+        z-index: 9999;
+        top: 36px;
+    }
+    .p1viewEtTxte{
+        flex-direction: column-reverse;
+    }
+    .zoneDétails, .cadrePhoto{
+        width: 100%;
+    }
+    .filtres {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloc-filtre {
+        width: 10%;
+        margin-bottom: 2%;
+    }
+    .menu-options{
+        width: 20%;
+    }
+    #filtre-tri {
+        padding-left: 0;
+    }
+    .zoneDétails{
+        border-bottom: 1px solid;
+    }
+    .detailPhoto{
+        border-bottom: none;
+    }
+    .p2interaction-nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .interaction-contact{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .interaction-contact p{
+        margin: 0;
+    }
+    .interaction-contact button {
+        margin: 2%;
+        width: 35%;
+        padding: 1%;
+    }
+    .zone-fleche-preview{
+        display: none;
+    }
+    .p3autrepost {
+        flex-direction: column;
+        align-content: center;
+        flex-wrap:wrap;
+    }
+    .autres-photos{
+        max-width: none;
+    }
+    
+    /* single-photo*/
+    .zone-les-photos{
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu-footer{
+        flex-direction: column;
+    }
+}

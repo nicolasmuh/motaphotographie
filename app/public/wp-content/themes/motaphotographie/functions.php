@@ -3,6 +3,7 @@
 // Chargement du style CSS et des scripts
 function theme_enqueue_styles(){
     wp_enqueue_style('theme', get_template_directory_uri() . '/css/theme.css');
+    wp_enqueue_style('responsive', get_template_directory_uri() . '/css/responsive.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', array(), null);
     
@@ -61,7 +62,7 @@ function charger_plus() {
     if ($photo_query->have_posts()) {
         while ($photo_query->have_posts()) {
             $photo_query->the_post();
-            get_template_part('template_part/photo-bloc');
+            get_template_part('template-parts/photo-bloc');
         }
         wp_reset_postdata();
     }
@@ -73,7 +74,7 @@ function filtrer_photos() {
 
     // Vérification du nonce avant exécution de la requête
     check_ajax_referer('ajax-nonce', 'nonce');
-    error_log('Nonce check passed'); // Log pour vérifier que le nonce est passé
+    //error_log('Nonce check passed'); // Log pour vérifier que le nonce est passé
 
     $tax_query = array('relation' => 'AND');
     $order = $_POST['order'] ?? 'ASC';
@@ -81,7 +82,7 @@ function filtrer_photos() {
     // Si une catégorie est présente et n'est pas égale à all
     if (isset($_POST['category']) && $_POST['category'] !== 'all') {
         $category = sanitize_text_field($_POST['category']);
-        error_log('Category: ' . $category);//Log pour vérifier la valeur
+        //error_log('Category: ' . $category);//Log pour vérifier la valeur
         $tax_query[] = array(
             'taxonomy' => 'categorie_photos',//categorie_photos a la place categorie
             'field' => 'slug',
@@ -91,14 +92,14 @@ function filtrer_photos() {
     // Si un format est présent et n'est pas égal à all
     if (isset($_POST['format']) && $_POST['format'] !== 'all') {
         $format = sanitize_text_field($_POST['format']);
-        error_log('formats: ' . $format);//Log pour vérifier la valeur
+        //error_log('formats: ' . $format);//Log pour vérifier la valeur
         $tax_query[] = array(
             'taxonomy' => 'formats',
             'field' => 'slug',
             'terms' => $format,
         );
     }
-    error_log(print_r($tax_query, true)); // Log pour vérifier la structure de la tax_query
+    //error_log(print_r($tax_query, true)); // Log pour vérifier la structure de la tax_query
     $args = array(
         'post_type' => 'photographies',
         'posts_per_page' => 8,
@@ -107,9 +108,9 @@ function filtrer_photos() {
         'paged' => 1,
         'tax_query' => $tax_query,
     );
-    error_log(print_r($args, true)); // Log pour vérifier les arguments de la requête
+    //error_log(print_r($args, true)); // Log pour vérifier les arguments de la requête
     $photo_query = new WP_Query($args);
-    error_log('Query executed'); // Log pour vérifier que la requête est exécutée
+    //error_log('Query executed'); // Log pour vérifier que la requête est exécutée
 
     // Stockage du résultat en tampon temporairement
     ob_start();

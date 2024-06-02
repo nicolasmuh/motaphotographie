@@ -39,7 +39,7 @@ h3{
 p{
     font-family: Poppins;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 21px;
 }
 body{
@@ -572,6 +572,16 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.bouton-accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#charger-plus{
+    width: 20%;
+    padding: 1%;
+    margin: 2%;
+}
 /* Filtres */
 
 .filtres {
@@ -697,76 +707,4 @@ main{
 
 .burger-open{
     display: none;
-}
-/**responsive **/
-@media (max-width: 769px) {
-
-    /* Header */
-    .logo-site img {
-        max-width: 200px;
-    }
-    header{
-        flex-direction: column;
-    }
-    .logo{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-    nav {
-        display: none;
-        width: 100%;
-        z-index: 999;
-        background-color: red;
-        margin: 0;
-        justify-content: center;
-        padding: 150px 0;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-left: 0;
-    }
-    nav ul.menu li a{
-        color: white;
-        font-size: 44px;
-    }
-
-    .burger-open{
-        display: block;
-    }
-
-    .logo-site {
-        margin: 0 20px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .emplacement-modale{
-        z-index: 9999;
-        top: 36px;
-    }
-    .p1viewEtTxte{
-        flex-direction: column-reverse;
-    }
-    .zoneDétails, .cadrePhoto{
-        width: 100%;
-    }
-    .filtres {
-        width: 100%;
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #filtre-tri {
-        padding-left: 0;
-    }
-    
-    /* single-photo*/
-    .zone-les-photos{
-        flex-direction: column;
-        align-content: center;
-    }
 }

@@ -132,13 +132,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fonction de mise à jour des photos
     function miseAJourPhotos(category, format, order) {
-        console.log("Starting AJAX request");
+        //console.log("Starting AJAX request");
         // Envoyer une requête AJAX pour récupérer les photos filtrées
         jQuery.ajax({
             url: myAjax.ajaxurl,
             type: 'POST',
             data: {
-                action: 'filtrer_photos',
+                action: 'filtrer_photos',// nom exact de la taxonomie
                 category: category,
                 format: format,
                 order: order,
@@ -146,10 +146,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 nonce: myAjax.nonce
             },
             success: function(response) {
-                console.log("AJAX request successful");
-                console.log("Response:", response);
+                //console.log("AJAX request successful");
+                //console.log("Response:", response);
                 zoneLesPhotos.innerHTML = response;
-                console.log("zoneLesPhotos element:", zoneLesPhotos);
+                //console.log("zoneLesPhotos element:", zoneLesPhotos);
                 // Si le nouveau contenu dispose de moins de 8 photos, alors le bouton charger plus disparaît
                 surveillerChargerPlus();
                 // L'overlay de chaque photo se charge à chaque requête
