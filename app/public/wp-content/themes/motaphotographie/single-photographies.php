@@ -166,7 +166,7 @@ endif;
 <div class="p3PostsEnRapport">
     <h3>Vous aimerez aussi</h3>
     <div class="p3presente">
-        <div class="p3autrepost">
+        <div class="p3autrepost zone-photos">
             <?php
                 // Récupération de la catégorie de la photo actuelle
                 $categories = wp_get_post_terms(get_the_ID(), 'categorie_photos');

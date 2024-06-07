@@ -13,7 +13,7 @@ get_header();
 ?>
 
     <div class="hero">
-        <h1>Photographe Event</h1>
+        <h1>PHOTOGRAPHE EVENT</h1>
         <div class="cadre_affiche_foto_alea">
             <?php
             // Affichage aléatoire d'une photo

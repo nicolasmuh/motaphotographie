@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	function overlay() {
 		// Apparition de l'overlay au survol
 		const autresPhotos = document.querySelectorAll('.autres-photos');
-	
+		console.log(autresPhotos)
 		autresPhotos.forEach(element => {
 			const overlay = element.querySelector('.survol-photo');
 			const oeil = element.querySelector('.oeil');

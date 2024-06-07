@@ -1,7 +1,7 @@
 /**responsive **/
 @media (max-width: 800px) {
     h1{
-        font-size: 28;
+        font-size: 28px;
     }
     h2{
         font-size: 46px;
@@ -53,6 +53,9 @@
         z-index: 9999;
         top: 36px;
     }
+    .hero h1{
+        -webkit-text-stroke-width: 1px;
+    }
     .p1viewEtTxte{
         flex-direction: column-reverse;
     }
@@ -62,10 +65,9 @@
     .filtres {
         width: 100%;
         margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-left: -8%;
         flex-direction: column;
+        
     }
     .bloc-filtre {
         width: 10%;
@@ -110,6 +112,10 @@
     }
     .autres-photos{
         max-width: none;
+    }
+    .zone-photos .survol-photo{
+        width: 100%;
+        left: 0;
     }
     
     /* single-photo*/

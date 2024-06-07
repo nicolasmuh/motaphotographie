@@ -1,10 +1,11 @@
 /*** réglage général retenu pour le designe***/
 :root {
     --rouge-principal: #E00000;
-    --rouge-secondairee: #FE5858;
+    --rouge-secondaire: #FE5858;
     --rouge-tertiaire: #FFD6D6;
     --texte-noir: #000000;
     --bleu-soutenu: #313144;
+    --bleu-filtre:#215aff;
     --gris-foncé: #C4C4C4;
     --gris-medium: #D8D8D8;
     --gris-light: #E5E5E5;
@@ -437,14 +438,17 @@ footer {
 .zone-les-photos .survol-photo, .zone-photos .survol-photo {
     display: none;
     position: absolute;
-    top: 0;
+    top: 16px;
     left: 0;
     background-color: rgba(0,0,0,0.6);
     width: 100%;
-    height: 98.5%;
+    height: 92.5%;
     z-index: 65;
-    justify-content: center;
-    align-items: center;
+
+}
+.zone-photos .survol-photo {
+    width: 124%;
+    left: -12%;
 }
 
 .zone-les-photos .structuration-survol-photo, .zone-photos .structuration-survol-photo {
@@ -490,24 +494,24 @@ footer {
 
 .zone-les-photos .bas-survol, .zone-photos .bas-survol {
     display: flex;
-    gap: 195%;
+    gap: 145%;
     transform: scale(1.5);
     position: absolute;
-    bottom: 1%;
+    bottom: 2%;
     left: 10%;
     opacity: 0.8;
 }
 .zone-les-photos .bas-survol .ref_photo, .zone-les-photos .bas-survol .list_cate,
 .zone-photos .bas-survol .ref_photo, .zone-photos .bas-survol .list_cate{
-    color: var(--gris-light) ;
+    color: #fff ;
 }
-.survol-reference {
+.ref_photo {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.survol-categorie {
+.list_cate {
     font-family: 'SpaceMono', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -527,9 +531,10 @@ main{
     margin: 0;
 }
 .hero h1{
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     color: transparent;
     -webkit-text-stroke-width: 2px; /* Largeur du contour */
@@ -590,8 +595,8 @@ main{
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin: 5% 0 3% 0;
-    gap: 14%;
+    margin: 5% 0 3% 6%;
+    gap: 18%;
 }
 .bloc-filtre{
     width: 6%;
@@ -639,7 +644,7 @@ main{
 }
 
 .menu-ouvert {
-    border: 1.3px solid #215AFF
+    border: 1.3px solid var(--bleu-filtre)
 }
 
 .menu-options {
@@ -681,25 +686,25 @@ main{
 }
 
 .menu-option:hover {
-    background-color: #FFD6D6;
+    background-color: var(--rouge-tertiaire);
 }
 
 .menu-option:active {
-    background-color: #FE5858;
+    background-color: var(--rouge-secondaire);
 }
 
 .menu-option:focus {
-    background-color: #E00000
+    background-color: var(--rouge-principal);
 ;
 }
 
 .menu-option.selectionne {
-    background-color: #E00000;
+    background-color: var(--rouge-principal);
     color: #fff;
 }
 
 .menu-option.dernier-selectionne {
-    background-color: #E00000;
+    background-color: var(--rouge-principal);
     color: #fff;
     border-radius: 0 0 8px 8px;
 }
